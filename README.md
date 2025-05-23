@@ -1,6 +1,8 @@
 Website for School Project
 
 Accessability
+
+
 JavaScript
 - Toggle Dark Mode and Light Mode
 - Toggle More About Me button to hide/show text
