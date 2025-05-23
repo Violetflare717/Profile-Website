@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <button onclick="toggleTheme()" style="position:absolute; top:10px; right:10px; padding:5px 10px;">Toggle Theme</button>
+	<button onclick="toggleSound()" style="position:absolute; top:50px; right:10px; padding:5px 10px;" id="soundBtn">Play Sound</button>
+
+    <nav>
+      <ul>
+        <li style="--i:1"><a href="#profile">Profile</a></li>
+        <li style="--i:2"><a href="#education">Education</a></li>
+        <li style="--i:3"><a href="#training">Training / Seminars</a></li>
+        <li style="--i:4"><a href="#projects">Projects</a></li>
+        <li style="--i:5"><a href="#experience">Job Experience</a></li>
+        <li style="--i:6"><a href="#contact">Contact Us!</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="profile">
+      <h2>Profile</h2>
+      <a href="https://www.facebook.com/VioletflareOfLightAndDarkness" target="_blank">
+        <img src="assets/img/Cerilles_Profile_Pic.jpg" alt="Profile Picture" id="profile-pic" style="width:150px; height:150px; border-radius:50%; cursor:pointer;">
+      </a>
+      <p>Greetings! Welcome to my site this is where you'll find more information about me.</p>
+      <button onclick="toggleProfileDetails()">More About Me</button>
+      <div id="extra-profile" style="display: none;">
+        <h2><strong>Hobbies</strong></h2>
+		<ul>
+        <li> Video Editing<br />
+        </li>
+        <li> Video Game Development<br />
+        </li>
+        <li> Retrospective Videos<br />
+        </li>
+      </ul>
+      </div>
+    </section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>
+      <strong>University Of San Carlos North Campus</strong><br />
+      <button onclick="openModal('map1')">View Map</button>
+      <div id="map1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('map1')">&times;</span>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.4359401131!2d123.901127!3d10.3118001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99946c07f77db%3A0x534b2a92ebc7c7e1!2sUniversity%20of%20San%20Carlos%20-%20North%20Campus!5e0!3m2!1sen!2sph!4v1716457000000!5m2!1sen!2sph"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <strong>Subangdaku Technical Vocational School</strong><br />
+      <button onclick="openModal('map2')">View Map</button>
+      <div id="map2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('map2')">&times;</span>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.1173793227175!2d123.94351700000001!3d10.325722000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ae81b9afef4da7d!2sSubangdaku%20Tech-Voc%20High%20School!5e0!3m2!1sen!2sph!4v1716458000000!5m2!1sen!2sph"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+    <section id="training">
+      <h2>Training / Seminars</h2>
+      <ul>
+        <li>Low Code Training Program Completion – Alliance, 2024</li>
+        <li>Leadership Training – CITE, 2023</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/@violetflare6248" target="_blank"> YouTube Channel containing my old videos</a> – A video showcasing features of my personal site.</li>
+        <li><a href="https://drive.google.com/file/d/1jD9fa-EJKRB3E-MWtakkPJdOHWSpJuWw/view?usp=sharing" target="_blank"> Cebu Scholar Edit 2024</a> - A video edited back in 2024 that won in 6th place</li>
+        <li><a href="https://drive.google.com/file/d/1W9zCvl_pi0CbVkRgcFdAwqI7gvTVlETo/view?usp=sharing" target="_blank"> ARG Video Presentation</a> - A video presentation made in ARG VHS format</li>
+		<li><a href="https://drive.google.com/drive/folders/10ARIq8LOdDXz6oFoRTGyknT1BDZjgxc7?usp=sharing" target="_blank"> GAME FAUNA</a> - A folder containing website and company idea called GAME FAUNA</li>
+		<li>
+			<a href="assets/cursor/Murasame_idle.ani" download>Download Cursor</a> – An animated cursor featuring anime-style designs (Work In Progress).<br>
+			<img src="assets/img/Murasame_idle.gif" alt="Cursor Preview" style="width:64px; height:64px; margin-top:8px; border:2px solid #9b59b6; border-radius:8px;">
+		
+		</li>
+		
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Job Experience</h2>
+      <p> Worked at Wondernail Salon for 2 months as an On-Job-Training subject</p>
+	  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjKhLiAtKWNAxXgR2wGHZxtL_EQFnoECDUQAQ&url=https%3A%2F%2Fm.facebook.com%2F61552946916725%2F&usg=AOvVaw1cnT4Z0l5g9QUH_bM0MaCC&opi=89978449" target="_blank"> Wondernail Salon Facebook Page</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Info</h2>
+      <p>
+        <img src="assets/img/Phone_Icon.jpg" alt="Phone" style="width:20px;"> +63 916 236 8081<br />
+        <img src="assets/img/Email_Icon.jpg" alt="Email" style="width:20px;"> darkluxion@gmail.com<br />
+        <img src="assets/img/Facebook_Icon.png" alt="Facebook" style="width:20px;"> <a href="https://www.facebook.com/VioletflareOfLightAndDarkness">facebook.com/Loraingreen</a><br />
+        <img src="assets/img/YouTube_Icon.png" alt="YouTube" style="width:20px;"> <a href="https://www.youtube.com/@violetflare6248">youtube.com/Violetflare</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
